@@ -1,5 +1,5 @@
 {
   "default": {
-    "boost-bloom": { "baseline": "1.88.0", "port-version": 0 }
+    "boost-bloom": { "baseline": "1.87.0", "port-version": 0 }
   }
 }
