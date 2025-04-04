@@ -42,6 +42,10 @@
     {
       "name": "boost-throw-exception",
       "version>=": "1.87.0"
+    },
+    {
+      "name": "boost-type-traits",
+      "version>=": "1.87.0"
     }
   ]
 }
