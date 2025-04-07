@@ -1,9 +1,9 @@
 {
   "versions": [
     {
-        "path": "$/ports/boost-throw-exception",
-        "version": "2025-04-07",
-        "port-version": 0
+      "git-tree": "f2cb151b6ea7f64f980b346b37d08b4fdd593b04",
+      "version-date": "2025-04-07",
+      "port-version": 0
     }
   ]
 }

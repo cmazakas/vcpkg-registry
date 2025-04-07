@@ -1,9 +1,9 @@
 {
   "versions": [
     {
-        "path": "$/ports/boost-headers",
-        "version": "2025-04-07",
-        "port-version": 0
+      "git-tree": "d881ee5f676bd28af3b09b9d3803df3555436d08",
+      "version-date": "2025-04-07",
+      "port-version": 0
     }
   ]
 }

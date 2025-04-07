@@ -1,9 +1,9 @@
 {
   "versions": [
     {
-        "path": "$/ports/boost-static-assert",
-        "version": "2025-04-07",
-        "port-version": 0
+      "git-tree": "f7e44edc3287c688dfd078c7fa80f20ecf97ecb3",
+      "version-date": "2025-04-07",
+      "port-version": 0
     }
   ]
 }

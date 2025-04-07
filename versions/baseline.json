@@ -52,6 +52,10 @@
       "baseline": "2025-04-07",
       "port-version": 0
     },
+    "boost-bloom": {
+      "baseline": "1.87.0",
+      "port-version": 0
+    },
     "boost-build": {
       "baseline": "2025-04-07",
       "port-version": 0
@@ -224,6 +228,10 @@
       "baseline": "2025-04-07",
       "port-version": 0
     },
+    "boost-hash2": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
     "boost-headers": {
       "baseline": "2025-04-07",
       "port-version": 0
@@ -333,6 +341,10 @@
       "port-version": 0
     },
     "boost-mpl": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-mqtt5": {
       "baseline": "2025-04-07",
       "port-version": 0
     },

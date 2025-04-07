@@ -1,9 +1,9 @@
 {
   "versions": [
-        {
-        "path": "$/ports/boost-container-hash",
-        "version": "2025-04-07",
-        "port-version": 0
+    {
+      "git-tree": "0a24ef887b6730ecf71624e0a2ceae2ebb129d6a",
+      "version-date": "2025-04-07",
+      "port-version": 0
     }
   ]
 }

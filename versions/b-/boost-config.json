@@ -1,9 +1,9 @@
 {
   "versions": [
-        {
-        "path": "$/ports/boost-config",
-        "version": "2025-04-07",
-        "port-version": 0
+    {
+      "git-tree": "95b90f2eb094db8ef0414bd5be35f8230d0d70f8",
+      "version-date": "2025-04-07",
+      "port-version": 0
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
   "versions": [
     {
-        "path": "$/ports/boost-predef",
-        "version": "2025-04-07",
-        "port-version": 0
+      "git-tree": "843ba2abe6ce50c21c3d959a8964772948ad775f",
+      "version-date": "2025-04-07",
+      "port-version": 0
     }
   ]
 }

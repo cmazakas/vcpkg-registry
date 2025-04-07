@@ -1,9 +1,9 @@
 {
   "versions": [
     {
-        "path": "$/ports/boost-cmake",
-        "version": "2025-04-07",
-        "port-version": 0
+      "git-tree": "ceb1e11a5c8c1d84c73a69a0bfef1cfe81be6708",
+      "version-date": "2025-04-07",
+      "port-version": 0
     }
   ]
 }

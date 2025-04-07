@@ -1,9 +1,9 @@
 {
   "versions": [
     {
-        "path": "$/ports/boost-uninstall",
-        "version": "2025-04-07",
-        "port-version": 0
+      "git-tree": "68394cf5e92c163bb13a3382066c973c1e1052dd",
+      "version-date": "2025-04-07",
+      "port-version": 0
     }
   ]
 }
