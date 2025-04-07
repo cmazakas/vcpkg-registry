@@ -1,5 +1,640 @@
 {
   "default": {
-    "boost-bloom": { "baseline": "1.87.0", "port-version": 0 }
+    "boost": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-accumulators": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-algorithm": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-align": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-any": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-array": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-asio": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-assert": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-assign": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-atomic": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-beast": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-bimap": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-bind": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-build": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-callable-traits": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-charconv": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-chrono": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-circular-buffer": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-cmake": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-cobalt": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-compat": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-compatibility": {
+      "baseline": "1.86.0",
+      "port-version": 0
+    },
+    "boost-compute": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-concept-check": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-config": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-container": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-container-hash": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-context": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-contract": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-conversion": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-convert": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-core": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-coroutine": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-coroutine2": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-crc": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-date-time": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-describe": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-detail": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-dll": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-dynamic-bitset": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-endian": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-exception": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-fiber": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-filesystem": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-flyweight": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-foreach": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-format": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-function": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-function-types": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-functional": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-fusion": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-geometry": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-gil": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-graph": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-graph-parallel": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-hana": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-headers": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-heap": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-histogram": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-hof": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-icl": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-integer": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-interprocess": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-interval": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-intrusive": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-io": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-iostreams": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-iterator": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-json": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-lambda": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-lambda2": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-leaf": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-lexical-cast": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-local-function": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-locale": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-lockfree": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-log": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-logic": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-math": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-metaparse": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-move": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-mp11": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-mpi": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-mpl": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-msm": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-multi-array": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-multi-index": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-multiprecision": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-mysql": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-nowide": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-numeric-conversion": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-odeint": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-optional": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-outcome": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-parameter": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-parameter-python": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-parser": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-pfr": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-phoenix": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-poly-collection": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-polygon": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-pool": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-predef": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-preprocessor": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-process": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-program-options": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-property-map": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-property-map-parallel": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-property-tree": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-proto": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-ptr-container": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-python": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-qvm": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-random": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-range": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-ratio": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-rational": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-redis": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-regex": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-safe-numerics": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-scope": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-scope-exit": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-serialization": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-signals2": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-smart-ptr": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-sort": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-spirit": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-stacktrace": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-statechart": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-static-assert": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-static-string": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-stl-interfaces": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-system": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-test": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-thread": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-throw-exception": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-timer": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-tokenizer": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-tti": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-tuple": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-type-erasure": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-type-index": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-type-traits": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-typeof": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-ublas": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-uninstall": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-units": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-unordered": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-url": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-utility": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-uuid": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-variant": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-variant2": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-vcpkg-helpers": {
+      "baseline": "1.84.0",
+      "port-version": 0
+    },
+    "boost-vmd": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-wave": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-winapi": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-xpressive": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
+    "boost-yap": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    }
   }
 }
