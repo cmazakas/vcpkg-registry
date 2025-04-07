@@ -7,7 +7,7 @@ vcpkg_from_github(
     REPO boostorg/boost
     REF ${boost_boost_ref}
     SHA512 ${boost_boost_sha512}
-    HEAD_REF master
+    HEAD_REF develop
 )
 
 vcpkg_from_github(
@@ -15,8 +15,8 @@ vcpkg_from_github(
     REPO boostorg/cmake
     REF ${boost_cmake_ref}
     SHA512 ${boost_cmake_sha512}
-    HEAD_REF master
-    PATCHES 
+    HEAD_REF develop
+    PATCHES
       "vcpkg-build.diff"
       "fix-mpi.diff"
       "no-prefix.diff"
@@ -24,6 +24,8 @@ vcpkg_from_github(
       "no-honor-static.diff"
       "add-optional-deps.diff"
 )
+
+set(VERSION 1.88.0)
 
 configure_file("${CMAKE_CURRENT_LIST_DIR}/CMakeLists.txt.in" "${SOURCE_PATH_CMAKE}/CMakeLists.txt" @ONLY)
 file(INSTALL "${CMAKE_CURRENT_LIST_DIR}/usage" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}")

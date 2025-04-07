@@ -3,13 +3,14 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO boostorg/asio
-    REF boost-${VERSION}
-    SHA512 bd17c014674040d7daf2bc856e3cb236a1ec7359d41c82f22c43672229fce9254a210fe332426f91305d80f2bc275d82e9758356ef376ee2f002bd4f9ef4d48f
-    HEAD_REF master
+    REF 62864c570afcb7234442168ecacd53af701d7d9e
+    SHA512 036f78ca8271c548624534a6d3eff662beee2d20a06cceb7fe428e3cd6fc48d1ad5b56da04d5e0df85c7a8a3235278c7bcea6f5b966fa7d28f5b31d35d2bdabc
+    HEAD_REF develop
     PATCHES
         opt-dep.diff
 )
 
+set(VERSION 1.88.0)
 set(FEATURE_OPTIONS "")
 boost_configure_and_install(
     SOURCE_PATH "${SOURCE_PATH}"

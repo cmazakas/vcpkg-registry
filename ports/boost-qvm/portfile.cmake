@@ -3,11 +3,12 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO boostorg/qvm
-    REF boost-${VERSION}
-    SHA512 dc0c8ce81888e241eab4df679541f6b84f606d5884df65ea141b5561e81507e513cf77f1fa58599e975f3104aabdb69183971ce6248e30cb2e9e3e3fe8e9b7b8
-    HEAD_REF master
+    REF daabde8f20ef751d078c220e230f81f7aee0db05
+    SHA512 30a09f9f22ba5c470e0543ee03cdc8b18f660ecfbcc4db54840f18c7cc84711a26f8914877d1f7b61c0b04bdc633bc2dde3ad3d97c3d24de7d6671c7eba9b62c
+    HEAD_REF develop
 )
 
+set(VERSION 1.88.0)
 set(FEATURE_OPTIONS "")
 boost_configure_and_install(
     SOURCE_PATH "${SOURCE_PATH}"

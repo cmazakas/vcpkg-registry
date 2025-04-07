@@ -3,13 +3,14 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO boostorg/odeint
-    REF boost-${VERSION}
-    SHA512 50b7b84fbf7b17e75e38c10da6ff7cbb9b120b09b38932fd941557ee625e95ba75e0a6c08774a3b0cba6332b06f85548d461b0e7ec05e85a4ef424739bf8e854
-    HEAD_REF master
+    REF 91a4a916fa193b02bda2ffc3920953387acae962
+    SHA512 7508fe452be4bafedc9b3518389b4375989f7bcd3e1679d027f310d66c6ba35afd1ab88c6b42cefb9ac760de9ea4d6b939c71d759bceb4b8b99c5f3a7a2d8fd7
+    HEAD_REF develop
     PATCHES
         opt-mpi.diff
 )
 
+set(VERSION 1.88.0)
 set(FEATURE_OPTIONS "")
 include("${CMAKE_CURRENT_LIST_DIR}/features.cmake")
 boost_configure_and_install(

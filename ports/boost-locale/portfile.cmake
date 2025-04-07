@@ -3,11 +3,12 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO boostorg/locale
-    REF boost-${VERSION}
-    SHA512 87299163baaa51aee527356d1155200f7c16b400a4557ec9f6687dc4544765326dc48a514ca06979920d2d0654b5b2ee61d2765a3cea9130c51befdf6afa191e
-    HEAD_REF master
+    REF d6e3119892ca08fbd3d934d22dd821dfb230e3c4
+    SHA512 1571b0c8538ce17152aae0aef7f79eb71799e2a639b69cb82651854ab90b286674cd155b0ff02a979d4d1f6ef871c973d5d321c9d4596e3f24ff33da079f5cd7
+    HEAD_REF develop
 )
 
+set(VERSION 1.88.0)
 set(FEATURE_OPTIONS "")
 include("${CMAKE_CURRENT_LIST_DIR}/features.cmake")
 boost_configure_and_install(

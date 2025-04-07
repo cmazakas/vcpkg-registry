@@ -3,11 +3,12 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO boostorg/polygon
-    REF boost-${VERSION}
-    SHA512 f73646aa99232730ad81fd6eb237bc587afcc4c65e96a64f46760354a769f7d6c3519c4bc95701308ce55a78c29887fe8bf04d87328cc0a793fdce80d0ab067a
-    HEAD_REF master
+    REF 7aa8793414fc926dbc816cf6017dfa64c54da288
+    SHA512 72eb61398816110433155c21fce04dfdab5bd6cdc223df608261eea4d0aaba7289b72870cb9c13b7d26720ffdf63da533498075c1095b8c355336b97f0f3cdcf
+    HEAD_REF develop
 )
 
+set(VERSION 1.88.0)
 set(FEATURE_OPTIONS "")
 boost_configure_and_install(
     SOURCE_PATH "${SOURCE_PATH}"

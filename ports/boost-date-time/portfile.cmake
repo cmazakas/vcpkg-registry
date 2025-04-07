@@ -3,11 +3,12 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO boostorg/date_time
-    REF boost-${VERSION}
-    SHA512 eeab0d2ba671bbe88b4a79f38b0ee4a12c8874d9123f327c351ca4265ed077b62296b8d9e843d6e85b3063b09ddda4fc876f6798dbf9294315150b986f185f17
-    HEAD_REF master
+    REF 39714907b7d32ed8f005b5a01d1c2b885b5717b3
+    SHA512 390f51ddcdf19f41798eaf4b59a49615762f82b2f8a2fde7ee5b96a04af4284600d8bba0913ef70aab94c64e5e7432a5789c9887828a88c8b2a910d4983f43ba
+    HEAD_REF develop
 )
 
+set(VERSION 1.88.0)
 set(FEATURE_OPTIONS "")
 boost_configure_and_install(
     SOURCE_PATH "${SOURCE_PATH}"

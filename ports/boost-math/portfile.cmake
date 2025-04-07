@@ -3,14 +3,15 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO boostorg/math
-    REF boost-${VERSION}
-    SHA512 43d1d34a16c9cfebad7de838f2ac0ba12fcca26dd8c09289416a07178ba4e213ed7ba6a3f015a4e3acdff46d7e3bb1d96a1572129265a6f63fe0f2672d23c0e5
-    HEAD_REF master
+    REF a5c062542afb2037054c4e1b1be44db7b0859c38
+    SHA512 46a7093141d1fa32fe78f56d9a42e0d14c793605d573ceddbd6f6d295b364179109ef4fb779e8e767dc2b195dd76387970bc19d178e4865775781624e5fb9af4
+    HEAD_REF develop
     PATCHES
         build-old-libs.patch
         opt-random.diff
 )
 
+set(VERSION 1.88.0)
 set(FEATURE_OPTIONS "")
 include("${CMAKE_CURRENT_LIST_DIR}/features.cmake")
 boost_configure_and_install(

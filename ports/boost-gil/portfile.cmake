@@ -3,13 +3,14 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO boostorg/gil
-    REF boost-${VERSION}
-    SHA512 cc35d92e9194bbd39771f150371034d0c0e59c1724ffbe180ef731d48b682b15aaffc47c06cddb97c6ae387199a2aeb50d900cf9d71d7a5eb0a0c6db34da963e
-    HEAD_REF master
+    REF 688acf78f7fc4ecb5b1c6f1e4a8f4a5939d28e9b
+    SHA512 ac1b9f8226de2ac4721eecf3ceade42724f74d969c4d302278a3687b434a5affaf926222c4b4ed084a030634e7260836ef614e90f1e49e9391906f01dae20616
+    HEAD_REF develop
     PATCHES
         remove-boost-filesystem-dep.diff
 )
 
+set(VERSION 1.88.0)
 set(FEATURE_OPTIONS "")
 boost_configure_and_install(
     SOURCE_PATH "${SOURCE_PATH}"

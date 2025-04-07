@@ -8,13 +8,14 @@ vcpkg_download_distfile(ARM32_PATCH
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO boostorg/interprocess
-    REF boost-${VERSION}
-    SHA512 2ab71f9d34af2dfabe807e7e696bfb0089d0eff3aad9d17b0c8b5ac1487f865cd458b41bbf229a6d29bb4b1f4a1507aba95c48c7c64dba317d608813be2c4fbf
-    HEAD_REF master
+    REF 061bc6f8dfc2af90d9996a77317b21398f6bdda5
+    SHA512 c6da40e26bcfd88f61e9041db1b53ebdc92c5cdea40cf22f0c729da65d5ed9a3fa223a6a4fe20ecc6052bea487e3326a70a0ee1b20267c8010aa8120db6a8ea2
+    HEAD_REF develop
     PATCHES
         ${ARM32_PATCH}
 )
 
+set(VERSION 1.88.0)
 set(FEATURE_OPTIONS "")
 boost_configure_and_install(
     SOURCE_PATH "${SOURCE_PATH}"

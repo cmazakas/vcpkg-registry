@@ -3,13 +3,14 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO boostorg/stacktrace
-    REF boost-${VERSION}
-    SHA512 708f52eb3cee64b298d55485bfb8899b199797a2f5481e589ff0377f886d7fdfe440eb90ab3cdfdca66cd89249babf5b825ff4f095eccebd4e53e951f3ece667
-    HEAD_REF master
+    REF d6499f26d471158b6e6f65eea7425200f842b547
+    SHA512 fdaa1fc5a6b807feea1017e391a252b5ca163cf72fbf8e9a9742d10d58e04fdf9296169390438b21c2a35d8e5197e94e464cdb86a0f73dd7408d1ab368c16bba
+    HEAD_REF develop
     PATCHES
         fix_config-check.diff
 )
 
+set(VERSION 1.88.0)
 set(FEATURE_OPTIONS "")
 include("${CMAKE_CURRENT_LIST_DIR}/features.cmake")
 boost_configure_and_install(

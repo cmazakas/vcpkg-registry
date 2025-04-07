@@ -8,13 +8,14 @@ vcpkg_download_distfile(ARM32_PATCH
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO boostorg/json
-    REF boost-${VERSION}
-    SHA512 0edf435ae9f7efc09cc6a62a2bc1831349f5b5eff24e70a0be7eaa073ac5663df83b32f2c27d6acdff86d3a7188476cf7e396cb0d9277a14d928dc883f26e58d
-    HEAD_REF master
+    REF 0b1048adf7571b42ae9f684b63e4383241b9e4a1
+    SHA512 a13fcccbedc82a9af1c95de7941a3f6e038e4edcea681597823c38b1a65434f382a79506545a081ab4441bd6253acbbcf9602bae8826fb17288b75749b6b6d2a
+    HEAD_REF develop
     PATCHES
         ${ARM32_PATCH}
 )
 
+set(VERSION 1.88.0)
 set(FEATURE_OPTIONS "")
 boost_configure_and_install(
     SOURCE_PATH "${SOURCE_PATH}"

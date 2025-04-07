@@ -3,11 +3,12 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO boostorg/exception
-    REF boost-${VERSION}
-    SHA512 01cccdaa247de03fb17ec87900803c181baac8a97733683754c2f20e969bbe1e562593b2ad0fbe66ac93d07ddc85f4f9e440122164aacfaac54201c04aa5128a
-    HEAD_REF master
+    REF 9238ef8e7f97e619ed3e58bc7becf16b4966ccf0
+    SHA512 5b3d5e63d90192cf7c55dfb390aaa4d7c52f1c0265a931f39f62d13136afc90d0928a60d03d775866a67f7d794eb18213eeda1859d7aafeac55ad5c2c82aba03
+    HEAD_REF develop
 )
 
+set(VERSION 1.88.0)
 set(FEATURE_OPTIONS "")
 include("${CMAKE_CURRENT_LIST_DIR}/features.cmake")
 boost_configure_and_install(
