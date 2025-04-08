@@ -1,0 +1,158 @@
+diff --git a/scripts/boost/generate-ports.ps1 b/scripts/boost/generate-ports.ps1
+index 6531cb6b92..bc9b2a173e 100644
+--- a/scripts/boost/generate-ports.ps1
++++ b/scripts/boost/generate-ports.ps1
+@@ -1,7 +1,8 @@
+ [CmdletBinding()]
+ param (
+     $libraries = @(),
+-    $version = "1.87.0",
++    $version = "1.88.0",
++    $versionDate = "2025-04-07",
+ # 1: boost-cmake/ref_sha.cmake needs manual updating
+ # 2: This script treats support statements as platform expressions. This is incorrect
+ #    in a few cases e.g. boost-parameter-python not depending on boost-python for uwp since
+@@ -27,25 +28,7 @@ $semverVersion = ($version -replace "(\d+(\.\d+){1,3}).*", "`$1")
+ 
+ # Clear this array when moving to a new boost version
+ $defaultPortVersion = 0
+-$portVersions = @{
+-    'boost' = 1;
+-    'boost-asio' = 1;
+-    'boost-atomic' = 1;
+-    'boost-cobalt' = 1;
+-    'boost-compute' = 1;
+-    'boost-context' = 1;
+-    'boost-flyweight' = 1;
+-    'boost-interprocess' = 1;
+-    'boost-json' = 1;
+-    'boost-lexical-cast' = 1;
+-    'boost-lockfree' = 1;
+-    'boost-mysql' = 1;
+-    'boost-optional' = 1;
+-    'boost-parser' = 1;
+-    'boost-process' = 1;
+-    'boost-regex' = 1;
+-    'boost-unordered' = 1;
+-}
++$portVersions = @{}
+ 
+ function Get-PortVersion {
+     param (
+@@ -269,14 +252,14 @@ function AddBoostVersionConstraints() {
+     foreach ($dependency in $Dependencies) {
+         if ($dependency.Contains("name")) {
+             if ($dependency.name.StartsWith("boost")) {
+-                $dependency["version>="] = $semverVersion
++                $dependency["version>="] = $versionDate
+             }
+         }
+         else {
+             if ($dependency.StartsWith("boost")) {
+                 $dependency = @{
+                     "name"       = $dependency
+-                    "version>="  = $semverVersion
++                    "version>="  = $versionDate
+                 }
+             }
+         }
+@@ -299,12 +282,13 @@ function GeneratePortManifest() {
+         "homepage"        = $Homepage
+         "description"     = $Description
+     }
+-    if ($version -eq $semverVersion) {
+-        $manifest["version"] = $version
+-    }
+-    else {
+-        $manifest["version-string"] = $version
+-    }
++    $manifest["version-date"] = $versionDate
++    # if ($version -eq $semverVersion) {
++    #     $manifest["version"] = $version
++    # }
++    # else {
++    #     $manifest["version-string"] = $version
++    # }
+     if ($License) {
+         $manifest["license"] += $License
+     }
+@@ -357,6 +341,7 @@ function GeneratePort() {
+     param (
+         [string]$Library,
+         [string]$Hash,
++        [string]$SHA,
+         $Dependencies = @()
+     )
+ 
+@@ -386,9 +371,9 @@ function GeneratePort() {
+         "vcpkg_from_github(",
+         "    OUT_SOURCE_PATH SOURCE_PATH",
+         "    REPO boostorg/$Library",
+-        "    REF boost-`${VERSION}",
++        "    REF $SHA",
+         "    SHA512 $Hash",
+-        "    HEAD_REF master"
++        "    HEAD_REF develop"
+     )
+ 
+     [string[]]$allmods = @()
+@@ -413,6 +398,7 @@ function GeneratePort() {
+     }
+ 
+     $portfileLines += @(
++        "set(VERSION $version)",
+         "set(FEATURE_OPTIONS `"`")"
+     )
+     if (Test-Path "$portsDir/$portName/features.cmake") {
+@@ -447,7 +433,7 @@ if (!(Test-Path "$scriptsBoostDir/boost")) {
+     "Cloning boost..."
+     Push-Location $scriptsBoostDir
+     try {
+-        git clone https://github.com/boostorg/boost --branch boost-$version
++        git clone https://github.com/boostorg/boost --branch develop
+     }
+     finally {
+         Pop-Location
+@@ -457,7 +443,7 @@ else {
+     Push-Location $scriptsBoostDir/boost
+     try {
+         git fetch
+-        git checkout -f boost-$version
++        git checkout -f develop
+     }
+     finally {
+         Pop-Location
+@@ -489,11 +475,14 @@ if ($libraries.Length -eq 0) {
+ $boostPortDependencies = @()
+ 
+ foreach ($library in $libraries) {
+-    $archive = "$downloads/boostorg-$library-boost-$version.tar.gz"
++    $commit = Invoke-Expression "git ls-remote https://github.com/boostorg/$library.git HEAD"
++    $commit = ($commit -split '\s')[0]
++
++    $archive = "$downloads/boostorg-$library-$commit.tar.gz"
+     "Handling boost/$library... $archive"
+     if (!(Test-Path $archive)) {
+         "Downloading boost/$library..."
+-        Invoke-WebRequest -Uri "https://github.com/boostorg/$library/archive/boost-$version.tar.gz" -OutFile "$archive"
++        Invoke-WebRequest -Uri "https://github.com/boostorg/$library/archive/$commit.tar.gz" -OutFile "$archive"
+         "Downloaded boost/$library..."
+     }
+     $hash = & $vcpkg --x-wait-for-lock hash $archive
+@@ -502,7 +491,7 @@ foreach ($library in $libraries) {
+         $hash = $hash[1]
+     }
+ 
+-    $unpacked = "$scriptsBoostDir/libs/$library-boost-$version"
++    $unpacked = "$scriptsBoostDir/libs/$library-$commit"
+     if (!(Test-Path $unpacked)) {
+         "Unpacking boost/$library..."
+         New-Item -ItemType "Directory" $scriptsBoostDir/libs -erroraction SilentlyContinue | out-null
+@@ -680,6 +669,7 @@ foreach ($library in $libraries) {
+         GeneratePort `
+             -Library $library `
+             -Hash $hash `
++            -SHA $commit `
+             -Dependencies $deps
+ 
+         $boostPortDependencies += @(GeneratePortDependency $library)
