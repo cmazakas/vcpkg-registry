@@ -1,11 +1,12 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
-    REPO cmazakas/bloom
-    REF 798b2220114bffe8e92227c32fb1d9a6f4a8f375
-    SHA512 8a5cb4edbae06b621d071f895cc3679cd94307237e361ce426118ef894cc2dc4a6918b2ace2e411d4bfa27fddd02b36d2cad3bae87fb857049282c6ea3b3d8c4
+    REPO joaquintides/bloom
+    REF e578fe2274e60936119f89ce51512e8d9f1d7972
+    SHA512 62e1167bafea8d18950838df9766b517b4192529bac14d212aff9d9ba77416142da1dcb934a2b0e2648b25d9e93390de5b94d0e49a78a699093fe931be9d6cb9
     HEAD_REF develop
 )
 
+set(VERSION 1.88.0)
 set(FEATURE_OPTIONS "")
 boost_configure_and_install(
     SOURCE_PATH "${SOURCE_PATH}"
