@@ -68,7 +68,7 @@ set of ports. Note that users can still manually specify any version that's cont
 
 Version entries follow simple idioms. vcpkg looks up directories that match the first letter of the user's port. In this base, all ports are prefixed with `boost-`
 so we only have a `b-/` directory. Contained within are the files that define available versions for each port. Each port's version file will look like this:
-```json
+```
 // boost-align.json
 {
   "versions": [
@@ -82,7 +82,7 @@ so we only have a `b-/` directory. Contained within are the files that define av
 ```
 
 The `git-tree` is the result of:
-```
+```bash
 exbigboss@pleiades ~/cpp/boost-registry (master)
 ❯ git rev-parse HEAD:ports/boost-align
 198cd0b00a801a25257cd7f25273d7fba4d351a4

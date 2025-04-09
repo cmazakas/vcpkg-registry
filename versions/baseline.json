@@ -380,6 +380,10 @@
       "baseline": "2025-04-07",
       "port-version": 0
     },
+    "boost-open-method": {
+      "baseline": "2025-04-07",
+      "port-version": 0
+    },
     "boost-optional": {
       "baseline": "2025-04-07",
       "port-version": 0
